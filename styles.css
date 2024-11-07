@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+/* reset css */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", serif;
+  font-size: 14px;
+  color: white;
+}
+p {
+  margin-top: 0;
+}
+/* //////////////// */
+
+section {
+  background-color: var(--Grey-900);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: var(--Grey-800);
+  width: 20rem;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+main div img {
+  border-radius: 50%;
+  width: 90px;
+  margin-bottom: 20px;
+}
+#name {
+  font-size: 22px;
+  font-weight: 600;
+}
+#address {
+  color: var(--Green);
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+}
+#skill {
+  margin-top: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+main ul a {
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+main ul li {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  background-color: var(--Grey-700);
+  padding: 12px;
+  border-radius: 10px;
+}
+a:hover {
+  li {
+    background-color: var(--Green);
+    color: black;
+  }
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
